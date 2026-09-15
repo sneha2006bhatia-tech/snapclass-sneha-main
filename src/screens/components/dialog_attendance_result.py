@@ -2,7 +2,7 @@ import streamlit as st
 from src.screens.database.db import enroll_student_to_subject
 from src.screens.database.config import supabase
 from src.screens.database.db import create_attendance
-@st.dialog("Voice Attendance")
+
 def show_attendance_result(df,logs):
         st.write("Please review the attendance before confirming.")
         st.dataframe(df,hide_index=True,width='stretch')
