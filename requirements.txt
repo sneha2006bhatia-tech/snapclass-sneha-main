@@ -20,3 +20,4 @@ pillow
 
 librosa
 resemblyzer
+setuptools<82
