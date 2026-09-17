@@ -152,7 +152,7 @@ def teacher_tab_take_attendance():
                             "timestamp":current_timestamp,
                             "is_present":bool(is_present)
                         })
-                        attendance_result_dialog(pd.DataFrame(results),attendance_to_logs)
+                    attendance_result_dialog(pd.DataFrame(results),attendance_to_logs)
     with c3:
         if st.button("Use Voice Attendance",type='primary',width='stretch',icon=":material/mic:"):
             voice_attendance_dialog(selected_subject_id)
