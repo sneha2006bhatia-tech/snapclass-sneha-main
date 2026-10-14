@@ -4,9 +4,9 @@ import io
 import librosa
 import streamlit as st
 
-st.cache_resource
+@st.cache_resource
 def load_voice_encoder():
-    return VoiceEncoder
+    return VoiceEncoder()
 
 def get_voice_embeddings(audio_bytes):
     try:
